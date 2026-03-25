@@ -47,7 +47,7 @@ nav a:hover {
     justify-content: left;
     background-color:black;
     padding: 50px;
-    border-radius:20px;
+    border-radius:10px;
     width: 225px;
     height:300px;
     text-align: center;
@@ -57,6 +57,7 @@ nav a:hover {
     text-align: center;
     color:white;
     font-family:'Nunito',sans-serif;
+    margin-top: -20px;
 
 }
 
@@ -64,20 +65,38 @@ nav a:hover {
     color: green;
     font-size: 45px;
     font-family:'Raleway',sans-serif;
+    margin-top: -5px;
+}
+#blue{
+    color:blue;
+}
+
+#purple{
+    color: purple;
 }
 
 .card h2 span{
     font-size:small;
+    margin-top: -5px;
 }
 
 .card ul{
     color:white;
     font-size: medium;
+    font-width: 100px;
+    margin-top: -10px;
     
 }
 
+.card:hover{
+    transform:scale(1.05);
+    cursor: pointer;
+    transition: 0.3 ease;
+    box-shadow: black;
+}
+
 .heading h1{
-    font-family:'Raleway', sans-serif;
+    font-family:'Nunito', sans-serif;
     font-size: 50px;
     margin-bottom: -50px;
     color: white;
@@ -94,4 +113,34 @@ nav a:hover {
 .heading{
     gap:10px;
     margin-top:0px;
+}
+
+#card2:hover{
+    border: 2px solid blue;
+}
+
+#card1:hover{
+    border: 2px solid green;
+}
+
+#card3:hover{
+    border:2px solid purple;
+}
+
+.btn{
+    display:flex;
+    padding:40px;
+    margin-left: 130px;
+
+}
+
+.start-btn{
+    text-decoration: none;
+    font-family: 'Nunito',sans-serif;
+    font-size: 30px;
+    color: white;  
+}
+.start-btn:hover{
+    text-shadow: 0 0 10px white, 0 0 20px white;
+  transition: text-shadow 0.3s ease;
 }
